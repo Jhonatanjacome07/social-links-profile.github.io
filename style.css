@@ -1,145 +1,157 @@
 body {
-    font-family: 'Inter', sans-serif;
     /* Establece la fuente principal para todo el cuerpo del documento */
-    font-size: 14px;
+    font-family: 'Inter', sans-serif;
     /* Tamaño de fuente base para el cuerpo */
-    background-color: hsl(0, 0%, 0%);
+    font-size: 14px;
     /* Fondo del cuerpo de color negro */
-    display: flex;
+    background-color: hsl(0, 0%, 0%);
     /* Usa flexbox para centrar el contenido */
-    justify-content: center;
+    display: flex;
     /* Centra el contenido horizontalmente */
-    align-items: center;
+    justify-content: center;
     /* Centra el contenido verticalmente */
-    height: 100vh;
+    align-items: center;
     /* La altura del cuerpo es igual a la altura total de la ventana */
-    margin: 0;
+    height: 100vh;
     /* Elimina los márgenes predeterminados del cuerpo */
+    margin: 0;
+   
 }
 
 h1 {
-    color: hsl(75, 94%, 57%);
     /* Color verde claro para el texto del h1 */
-    font-size: 24px;
+    color: hsl(75, 94%, 57%);
     /* Tamaño de fuente para el h1 */
-    margin-bottom: 10px;
+    font-size: 24px;
     /* Espacio debajo del h1 */
+    margin-bottom: 10px;
+   
 }
 
 h2 {
-    color: hsl(0, 0%, 100%);
     /* Color blanco para el texto del h2 */
-    font-size: 18px;
+    color: hsl(0, 0%, 100%);
     /* Tamaño de fuente para el h2 */
-    margin-bottom: 20px;
+    font-size: 18px;
     /* Espacio debajo del h2 */
+    margin-bottom: 20px;
+    
 }
 
 .social-profile {
-    display: flex;
     /* Flexbox para organizar elementos dentro del contenedor */
-    flex-direction: column;
+    display: flex;
     /* Organiza los elementos en una columna */
-    align-items: center;
+    flex-direction: column;
     /* Centra los elementos horizontalmente */
-    width: 100%;
+    align-items: center;
     /* Ancho completo del contenedor */
-    max-width: 375px;
+    width: 100%;
     /* Ancho máximo del contenedor */
-    padding: 20px;
+    max-width: 375px;
     /* Espacio interior del contenedor */
-    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
     /* Fondo del contenedor de color gris oscuro */
-    border-radius: 10px;
+    background-color: hsl(0, 0%, 12%);
     /* Bordes redondeados del contenedor */
-    text-align: center;
+    border-radius: 10px;
     /* Alinea el texto al centro dentro del contenedor */
-    box-sizing: border-box;
+    text-align: center;
     /* Incluye padding y border en el cálculo del ancho y alto */
+    box-sizing: border-box;
+   
 }
 
 .profile-photo {
-    width: 120px;
     /* Ancho de la foto de perfil */
-    height: 120px;
+    width: 120px;
     /* Alto de la foto de perfil */
-    border-radius: 50%;
+    height: 120px;
     /* Hace la foto redondeada */
-    margin-bottom: 15px;
+    border-radius: 50%;
     /* Espacio debajo de la foto de perfil */
+    margin-bottom: 15px;
+    
 }
 
 .profile-description {
-    color: hsl(0, 0%, 50%);
     /* Color gris para la descripción del perfil */
-    margin-bottom: 20px;
+    color: hsl(0, 0%, 50%);
     /* Espacio debajo de la descripción */
+    margin-bottom: 20px;
+    
 }
 
 .social-links {
-    display: flex;
     /* Flexbox para organizar los botones */
-    flex-direction: column;
+    display: flex;
     /* Organiza los botones en una columna */
-    gap: 15px;
+    flex-direction: column;
     /* Espacio entre los botones */
-    width: 100%;
+    gap: 15px;
     /* Ancho completo del contenedor de los botones */
-    box-sizing: border-box;
+    width: 100%;
     /* Incluye padding y border en el cálculo del ancho y alto */
+    box-sizing: border-box;
+    
 }
 
 .social-button {
-    display: block;
     /* Los botones son elementos de bloque (ocupan todo el ancho disponible) */
-    width: 100%;
+    display: block;
     /* Ancho completo del botón */
-    padding: 15px;
+    width: 100%;
     /* Espacio interior del botón */
-    text-align: center;
+    padding: 15px;
     /* Alinea el texto al centro dentro del botón */
-    text-decoration: none;
+    text-align: center;
     /* Elimina el subrayado del enlace */
-    color: hsl(0, 0%, 100%);
+    text-decoration: none;
     /* Color del texto blanco */
-    background-color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 100%);
     /* Fondo del botón de color gris */
-    border-radius: 5px;
+    background-color: hsl(0, 0%, 50%);
     /* Bordes redondeados del botón */
-    font-weight: 600;
+    border-radius: 5px;
     /* Grosor de la fuente */
-    transition: background-color 0.3s ease;
+    font-weight: 600;
     /* Transición suave del color de fondo al hacer hover */
-    box-sizing: border-box;
+    transition: background-color 0.3s ease;
     /* Incluye padding y border en el cálculo del ancho y alto */
+    box-sizing: border-box;
+    
 }
 
 .social-button:hover {
-    background-color: hsl(75, 94%, 57%);
     /* Cambia el fondo a verde claro al pasar el cursor */
+    background-color: hsl(75, 94%, 57%);
+    
 }
 
 @media (min-width: 1440px) {
     .social-profile {
-        max-width: 500px;
         /* Ancho máximo del contenedor en pantallas grandes */
+        max-width: 500px;
+       
     }
 
     .social-links {
-        flex-direction: row;
         /* Organiza los botones en una fila en pantallas grandes */
-        flex-wrap: wrap;
+        flex-direction: row;
         /* Permite que los botones se ajusten en varias filas si es necesario */
-        gap: 10px;
+        flex-wrap: wrap;
         /* Espacio entre los botones */
+        gap: 10px;
+       
     }
 
     .social-button {
-        flex: 1 1 calc(50% - 10px);
         /* Cada botón ocupa el 50% del ancho menos 10px */
-        margin: 5px;
+        flex: 1 1 calc(50% - 10px);
         /* Espacio alrededor de cada botón */
-        box-sizing: border-box;
+        margin: 5px;
         /* Incluye padding y border en el cálculo del ancho y alto */
+        box-sizing: border-box;
+        
     }
 }
